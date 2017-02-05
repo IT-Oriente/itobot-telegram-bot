@@ -1,0 +1,28 @@
+{
+  "name": "it-bot",
+  "version": "1.0.0",
+  "description": "Bot de telegram para el grupo It Oriente",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "standard"
+  },
+  "dependencies": {
+    "date-events": "^1.0.1",
+    "node-telegram-bot-api": "^0.26.0",
+    "standard": "^8.6.0",
+    "time": "^0.11.4"
+  },
+  "author": "Luis Rivas <luis.rivas024@gmail.com>",
+  "contributors": [
+    {
+      "name": "Abraham Sánchez",
+      "email": "sanchezbaj@gmail.com"
+    },
+    {
+      "name": "Alfonso Lopez",
+      "email": "osnoser_12@hotmail.com"
+    }
+  ]
+}
