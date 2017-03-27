@@ -16,11 +16,6 @@ bot.on('message', (msg) => {
   fs.writeFileSync(`./mensajes/${chatId}-${msg.message_id}.json`, JSON.stringify(msg, null, 2), 'utf8')
 })
 
-bot.on('text', (msg) => {
-  let chatId = msg.chat.id
-  bot.sendMessage(chatId, 'Recibí tu mensaje, te responderé en lo que sepa cómo')
-})
-
 bot.on('new_chat_participant', (msg) => {
   let chatId = msg.chat.id
   bot.sendMessage(chatId, `Bienvenido @${msg.new_chat_member.username} te invitamos a leer las normas del grupo en el siguiente enlace https://github.com/IT-Oriente/Bienvenido \n Espero te sientas a gusto en compartir tus experiencias con nosotros en tecnología. También estamos en Twitter como @ITOrienteVE ¡Siguenos!.`)
