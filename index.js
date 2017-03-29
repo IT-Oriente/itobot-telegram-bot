@@ -11,9 +11,9 @@ let bot = new TelegramBot(token, { polling: true })
 let now = new time.Date();
 now.setTimezone('UTC+4');
 
-bot.on('message', (msg) => {
+bot.on('text', (msg) => {
   let chatId = msg.chat.id
-  fs.writeFileSync(`./mensajes/${chatId}-${msg.message_id}.json`, JSON.stringify(msg, null, 2), 'utf8')
+  bot.sendMessage(chatId, 'Recibí tu mensaje, te responderé en lo que sepa cómo')
 })
 
 bot.on('new_chat_participant', (msg) => {
