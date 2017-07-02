@@ -6,13 +6,18 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "test": "standard"
+    "lint": "standard"
   },
   "dependencies": {
     "date-events": "^1.0.1",
-    "node-telegram-bot-api": "^0.26.0",
-    "standard": "^8.6.0",
-    "time": "^0.11.4"
+    "moment-timezone": "^0.5.13",
+    "node-telegram-bot-api": "^0.26.0"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "engines": {
+    "node": "v6.11.0"
   },
   "author": "Luis Rivas <luis.rivas024@gmail.com>",
   "contributors": [
