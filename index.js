@@ -5,6 +5,7 @@ const clock = require('date-events')()
 const moment = require('moment-timezone')
 const quoteOfDay = require('./utils/utils.js').quoteOfDay
 
+require('dotenv').config()
 const token = process.env.BOT_API_KEY
 const botName = process.env.BOT_NAME
 const groupId = process.env.GROUP_ID
@@ -36,3 +37,4 @@ clock.on('8:00', function (now) {
 })
 
 console.log(`Se ha iniciado el Bot ${now}`)
+console.log(botName)

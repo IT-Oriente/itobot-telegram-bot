@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "date-events": "^1.0.1",
+    "dotenv": "^4.0.0",
     "moment-timezone": "^0.5.13",
     "node-telegram-bot-api": "^0.26.0"
   },

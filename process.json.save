@@ -1,0 +1,12 @@
+{
+  "apps" : [{
+    "name"        : "Ito bot",
+    "script"      : "./index.js",
+    "env": {
+      "BOT_API_KEY": "311375057:AAEFF36bFFTMvcdmxN_n_sCRs_GVqIJGHx4BOTNAME",
+      "BOT_NAME": "BOTNAME",
+      "GROUP_ID": "GROUP_TELEGRAM_ID"
+
+    }
+  }]
+}
